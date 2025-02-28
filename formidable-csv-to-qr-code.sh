@@ -3,11 +3,13 @@
 # Check to see if dependencies are installed, duckDB and qrencode
 if ! command -v duckdb &> /dev/null; then
   echo "Error: duckdb is not installed or not in PATH."
+  echo "Install command: sudo snap install duckdb"
   exit 1
 fi
 
 if ! command -v qrencode &> /dev/null; then
   echo "Error: qrencode is not installed or not in PATH."
+  echo "Install command: sudo apt install qrencode"
   exit 1
 fi
 
